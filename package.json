@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/DANIebw/DAVIELLE#readme",
   "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
     "vite": "^7.3.1"
   },
   "dependencies": {
