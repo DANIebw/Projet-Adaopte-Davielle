@@ -7,7 +7,6 @@ export default function App() {
   return (
     <>
       <NavBar />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/animals" element={<AdaoptPage />} />
