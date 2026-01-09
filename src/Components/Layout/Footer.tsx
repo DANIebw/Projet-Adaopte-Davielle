@@ -61,6 +61,11 @@ const Footer = () => {
             </p>
           </address>
         </div>
+        <div className="border-t border-gray-500">
+          <p className="text-white text-center mt-4">
+            © 2025 ADAOPTE. Tous droits réservés.
+          </p>
+        </div>
       </div>
     </footer>
   );
