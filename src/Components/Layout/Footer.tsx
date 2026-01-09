@@ -1,4 +1,4 @@
-import {} from "react-router/dom";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,24 +15,24 @@ const Footer = () => {
           <h3 className="text-red-500 text-lg mb-4">INFORMATIONS UTILES</h3>
           <ul className="space-y-2 text-sm sm:text-base">
             <li className="flex justify-start sm:justify-center items-center gap-2">
-              <a href="#" className="text-white">
+              <NavLink to="#" className="text-white">
                 FAQs
-              </a>
+              </NavLink>
             </li>
             <li className="flex justify-start sm:justify-center items-center gap-2">
-              <a href="#" className="text-white">
+              <NavLink to="#" className="text-white">
                 Conseils d'adoption
-              </a>
+              </NavLink>
             </li>
             <li className="flex justify-start sm:justify-center items-center gap-2">
-              <a href="#" className="text-white">
+              <NavLink to="#" className="text-white">
                 Nous contacter
-              </a>
+              </NavLink>
             </li>
             <li className="flex justify-start sm:justify-center items-center gap-2">
-              <a href="#" className="text-white">
+              <NavLink to="#" className="text-white">
                 Mentions légales
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -43,21 +43,21 @@ const Footer = () => {
             <p>75010 Paris, France</p>
             <p className="mt-4">
               Email:{" "}
-              <a
-                href="mailto:contact@adopte.fr"
+              <NavLink
+                to="mailto:contact@adopte.fr"
                 className="hover:text-white transition-colors"
               >
                 contact@adopte.fr
-              </a>
+              </NavLink>
             </p>
             <p>
               Tél:{" "}
-              <a
-                href="tel:+33123456789"
+              <NavLink
+                to="tel:+33123456789"
                 className="hover:text-white transition-colors"
               >
                 +33 1 23 45 67 89
-              </a>
+              </NavLink>
             </p>
           </address>
         </div>
