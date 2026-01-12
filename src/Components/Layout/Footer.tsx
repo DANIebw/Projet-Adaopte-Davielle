@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
         <div>
-          <h3 className="text-red-500 text-lg mb-4">ADOPTE</h3>
+          <h3 className="text-[#ff6d38] text-lg mb-4">ADOPTE</h3>
           <p className="text-white/80 text-sm sm:text-base leading-relaxed">
             Notre mission est de trouver des foyers aimants pour chaque animal
             abandonné et de promouvoir le bien-être animal.
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:text-center">
-          <h3 className="text-red-500 text-lg mb-4">INFORMATIONS UTILES</h3>
+          <h3 className="text-[#ff6d38] text-lg mb-4">INFORMATIONS UTILES</h3>
           <ul className="space-y-2 text-sm sm:text-base">
             <li className="flex justify-start sm:justify-center items-center gap-2">
               <NavLink to="#" className="text-gray-400">
@@ -77,7 +77,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="lg:text-right">
-          <h3 className="text-red-500 text-lg mb-4">CONTACT</h3>
+          <h3 className="text-[#ff6d38] text-lg mb-4">CONTACT</h3>
           <address className="text-white space-y-2 text-sm">
             <p>116 Rue du Faubourg Saint-Martin</p>
             <p>75010 Paris, France</p>
@@ -101,15 +101,16 @@ const Footer = () => {
             </p>
           </address>
         </div>
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2025 ADAOPTE. Tous droits réservés.
-          </p>
-          <p className="text-gray-400 text-xs mt-2">
-            Ce site a été développé par l'équipe ADAOPTE dans le cadre d'un
-            projet pour Ada Tech School
-          </p>
-        </div>
+      </div>
+      <div className="w-full border-t border-gray-800 mt-12 pt-8"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 text-center">
+        <p className="text-gray-400 text-sm">
+          © 2025 ADAOPTE. Tous droits réservés.
+        </p>
+        <p className="text-gray-400 text-xs mt-2">
+          Ce site a été développé par l'équipe ADAOPTE dans le cadre d'un projet
+          pour Ada Tech School
+        </p>
       </div>
     </footer>
   );
