@@ -58,3 +58,62 @@
   /* 📐 Largeur maximale du container */
   --container-width: 90%;
 }
+
+:root {
+  /* Couleur principale du site (fond clair général) */
+  --primary-color: #fffaf7;
+
+  /* Couleur secondaire (accent principal, ex: logo, boutons, éléments clés) */
+  --secondary-color: #ff6d38;
+
+  /* Couleur d’accent alternative (liens, éléments interactifs) */
+  --accent-color: #7a78ff;
+
+  /* Couleur des titres (headings h1, h2, h3…) */
+  --heading-color: #333;
+
+  /* Couleur claire utilisée pour les fonds secondaires */
+  --light-color: #f9f9f9;
+
+  /* Couleur sombre pour le texte principal */
+  --dark-color: #333;
+
+  /* Couleur de fond du bouton principal */
+  --btn-primary-bg: #333;
+
+  /* Couleur de fond du bouton secondaire */
+  --btn-secondary-bg: #e74c3c;
+
+  /* Couleur de fond du bouton accent (actions positives) */
+  --btn-accent-bg: #00a652;
+
+  /* Couleur du bouton principal au survol (hover) */
+  --btn-primary-hover-bg: #8584ff;
+
+  /* Couleur du bouton secondaire au survol */
+  --btn-secondary-hover-bg: #333;
+
+  /* Police utilisée pour les titres */
+  --font-family-heading: "Amatic SC", sans-serif;
+
+  /* Arrondi standard pour les cartes, boutons, inputs */
+  --border-radius: 8px;
+
+  /* Ombre légère (petits éléments) */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* Ombre moyenne (cartes, sections) */
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  /* Ombre forte (éléments importants) */
+  --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  /* Ombre très marquée (modales, éléments flottants) */
+  --shadow-xl: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Marge verticale standard entre les sections */
+  --section-margin: 2rem 0;
+
+  /* Largeur maximale du container principal */
+  --container-width: 90%;
+}
