@@ -19,28 +19,17 @@ export default function Navbar() {
     >
       <nav style={{ padding: "12px 16px", borderBottom: "1px solid #ddd" }}>
         <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
-          <strong>Animaux</strong> {/* Juste un texte/logo pour ta navbar */}
-          {/* LEFT: logo */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-              minWidth: 160,
-            }}
-          >
-            <FaPaw size={18} />
-            <strong style={{ fontWeight: 800, fontSize: 25 }}>
-              <span>Ada</span>
-              <span style={{ color: "#ff6d38" }}>opte</span>
-            </strong>
-          </div>
+          <span style={{ fontSize: 25 }}>
+            <strong>🐾Ada</strong>
+            <strong style={{ color: "#ff6d38" }}>opte</strong>
+          </span>
+
           <NavLink to="/" style={{ textDecoration: "none" }}>
             <FiHome size={18} />
             Accueil
           </NavLink>
           <NavLink to="/animals" style={{ textDecoration: "none" }}>
-            j'adopte{" "}
+            j'adopte
           </NavLink>
           <NavLink to="/" style={{ textDecoration: "none" }}>
             Guide l'adoption
