@@ -61,6 +61,15 @@ const Footer = () => {
             </p>
           </address>
         </div>
+        <div className="border-t border-gray-500">
+          <p className="text-white text-center mt-4">
+            © 2025 ADAOPTE. Tous droits réservés.
+          </p>
+          <p className="text-white text-center mt-2 text-sm">
+            Ce site a été développé par l'équipe ADAOPTE dans le cadre d'un
+            projet pour Ada Tech School
+          </p>
+        </div>
       </div>
     </footer>
   );
