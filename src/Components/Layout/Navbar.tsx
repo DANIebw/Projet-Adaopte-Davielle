@@ -30,7 +30,7 @@ export default function Navbar() {
             }}
           >
             <FaPaw size={18} />
-            <strong style={{ fontWeight: 800, fontSize: 18 }}>
+            <strong style={{ fontWeight: 800, fontSize: 25 }}>
               <span>Ada</span>
               <span style={{ color: "#ff6d38" }}>opte</span>
             </strong>

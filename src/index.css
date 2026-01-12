@@ -1,1 +1,60 @@
 @import "tailwindcss";
+
+:root {
+  /* 🤍 Blanc cassé (#fffaf7) – couleur principale de fond du site */
+  --primary-color: #fffaf7;
+
+  /* 🧡 Orange corail (#ff6d38) – couleur secondaire / accent principal (logo, CTA) */
+  --secondary-color: #ff6d38;
+
+  /* 💜 Violet bleuté (#7a78ff) – couleur d’accent (liens, interactions) */
+  --accent-color: #7a78ff;
+
+  /* ⚫ Gris foncé (#333) – couleur des titres */
+  --heading-color: #333;
+
+  /* 🤍 Gris très clair (#f9f9f9) – fonds secondaires */
+  --light-color: #f9f9f9;
+
+  /* ⚫ Gris foncé (#333) – texte principal */
+  --dark-color: #333;
+
+  /* ⚫ Gris foncé (#333) – fond du bouton principal */
+  --btn-primary-bg: #333;
+
+  /* 🔴 Rouge corail (#e74c3c) – fond du bouton secondaire */
+  --btn-secondary-bg: #e74c3c;
+
+  /* 🟢 Vert (#00a652) – fond du bouton accent (actions positives) */
+  --btn-accent-bg: #00a652;
+
+  /* 💜 Violet clair (#8584ff) – bouton principal au survol */
+  --btn-primary-hover-bg: #8584ff;
+
+  /* ⚫ Gris foncé (#333) – bouton secondaire au survol */
+  --btn-secondary-hover-bg: #333;
+
+  /* ✏️ Police manuscrite – utilisée pour les titres */
+  --font-family-heading: "Amatic SC", sans-serif;
+
+  /* ⭕ Arrondi standard des éléments (boutons, cartes) */
+  --border-radius: 8px;
+
+  /* 🌫️ Ombre légère – petits éléments */
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* 🌫️ Ombre moyenne – cartes, sections */
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+  /* 🌫️ Ombre forte – éléments importants */
+  --shadow-lg: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  /* 🌫️ Ombre très forte – modales / éléments flottants */
+  --shadow-xl: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* 📏 Marge verticale entre les sections */
+  --section-margin: 2rem 0;
+
+  /* 📐 Largeur maximale du container */
+  --container-width: 90%;
+}
