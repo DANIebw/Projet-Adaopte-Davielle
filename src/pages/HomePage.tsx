@@ -20,14 +20,14 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
                 alt="CharlesDeluvio"
                 className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
                 alt="Manja Vitolic"
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -36,14 +36,14 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg"
                 alt="Chan Swan"
                 className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg"
                 alt="Alan King"
                 className="w-full h-88 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -52,14 +52,14 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg"
                 alt="Jae Park"
                 className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg"
                 alt="Yosei G"
                 className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -68,14 +68,14 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
                 alt="Melanie Kreutz"
                 className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
-                src="/public/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
+                src="/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
                 alt="Peri Stojnic"
                 className="w-full h-88 object-cover hover:scale-105 transition-transform duration-300"
               />
