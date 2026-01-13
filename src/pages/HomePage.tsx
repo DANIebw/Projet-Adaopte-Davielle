@@ -22,7 +22,7 @@ export default function HomePage() {
               <img
                 src="/public/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
                 alt="CharlesDeluvio"
-                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
@@ -38,14 +38,14 @@ export default function HomePage() {
               <img
                 src="/public/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg"
                 alt="Chan Swan"
-                className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
                 src="/public/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg"
                 alt="Alan King"
-                className="w-full h-88 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -54,14 +54,15 @@ export default function HomePage() {
               <img
                 src="/public/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg"
                 alt="Jae Park"
-                className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
                 src="/public/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg"
                 alt="Yosei G"
-                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-64
+                 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -70,14 +71,14 @@ export default function HomePage() {
               <img
                 src="/public/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
                 alt="Melanie Kreutz"
-                className="w-full h-56 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
               <img
                 src="/public/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
                 alt="Peri Stojnic"
-                className="w-full h-88 object-cover hover:scale-105 transition-transform duration-300"
+                className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -86,7 +87,7 @@ export default function HomePage() {
           <button
             onClick={() => navigate("/animals")}
             type="button"
-            className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide"
+            className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer"
           >
             Voir tous les animaux
           </button>
