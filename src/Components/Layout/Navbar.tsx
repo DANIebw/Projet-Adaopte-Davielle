@@ -18,13 +18,13 @@ export default function Navbar() {
     >
       <nav
         style={{
-          padding: "12px 16px",
+          padding: "15px 20px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        <div style={{ fontSize: 25 }}>
+        <div style={{ fontSize: 35 }}>
           <strong>🐾Ada</strong>
           <strong style={{ color: "#ff6d38" }}>opte</strong>
         </div>
@@ -37,8 +37,10 @@ export default function Navbar() {
           }}
         >
           <NavLink to="/">
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <FiHome size={18} />
+            <div
+              style={{ fontSize: 18, display: "flex", alignItems: "center" }}
+            >
+              <FiHome size={22} />
               <strong>Accueil</strong>
             </div>
           </NavLink>
@@ -47,20 +49,26 @@ export default function Navbar() {
             aria-label="Page J'adopte"
             // style={{ textDecoration: "none" }}
           >
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <FaBone />
+            <div
+              style={{ fontSize: 20, display: "flex", alignItems: "center" }}
+            >
+              <FaBone size={22} />
               <strong>j'adopte</strong>
             </div>
           </NavLink>
           <NavLink to="/Guide">
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <LuFish size={18} />
+            <div
+              style={{ fontSize: 20, display: "flex", alignItems: "center" }}
+            >
+              <LuFish size={22} />
               <strong>Guide l'adoption</strong>
             </div>
           </NavLink>
           <NavLink to="/benevole">
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <LuRabbit size={18} />
+            <div
+              style={{ fontSize: 20, display: "flex", alignItems: "center" }}
+            >
+              <LuRabbit size={22} />
               <strong>Devenir bénévole</strong>
             </div>
           </NavLink>
@@ -74,7 +82,7 @@ export default function Navbar() {
             type="button"
             aria-label="Faire un don"
             style={{
-              padding: "10px 16px",
+              padding: "20px 35px",
               borderRadius: 999,
               border: "none",
               background: "#f15b4a",
@@ -83,7 +91,8 @@ export default function Navbar() {
               cursor: "pointer",
               display: "flex",
               alignItems: "center",
-              gap: 20,
+              gap: 1,
+              fontSize: 18,
             }}
             onClick={() => console.log("Don cliqué")}
           >
