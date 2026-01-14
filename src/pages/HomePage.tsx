@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
+import { HomeCards } from "../Components/Layout/HomeCards";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -160,6 +161,36 @@ export default function HomePage() {
             </button>
           </div>
         </div>
+      </div>
+
+      <div className="text-center max-w-2xl mx-auto mb-14">
+        <h2 className="text-3xl font-semibold mb-4">Comment ça marche</h2>
+        <p className="text-sm text-neutral-500">
+          Adopter un animal est un engagement sérieux et à long terme. Voici
+          notre processus d’adoption en quelques étapes simples.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4 py-16">
+        <HomeCards
+          icon="🔍"
+          title="1. Trouver votre compagnon idéal"
+          description="Parcourez notre base de données d'animaux disponibles et utiliser nos filtres pour trouver celui qui correspond à votre mode de vie."
+        />
+        <HomeCards
+          icon="📝"
+          title="2. Remplissez une demande"
+          description="Soumettez votre formulaire d'adoption pour l'animal qui vous intéresse. Nous examinons chaque demùande avec soin."
+        />
+        <HomeCards
+          icon="👋"
+          title="3. Rencontrez l'animal"
+          description="Visitez le refuge pour rencontrer l'animal et voir si vous êtes compatibles. C'est une étape essentielle du processus."
+        />
+        <HomeCards
+          icon="🏠"
+          title="4. Bienvenue à la maison"
+          description="Une fois votre demande approuvée, vous pouvez accueillir votre nouvel ami chez vous. Nous restons disponibles pour vous conseiller."
+        />
       </div>
 
       <div className="bg-[#f9f9f9] py-16 px-4">
