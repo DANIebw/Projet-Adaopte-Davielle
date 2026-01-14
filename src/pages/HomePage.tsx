@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
+import FiltersBar from "../adopt/FiltersBar";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -14,11 +15,11 @@ export default function HomePage() {
         - bg-center : l’image est centrée automatiquement
       */}
       <section
-        className="relative h-[70vh] bg-cover bg-center"
+        className="relative h-[70vh] bg-cover bg-center "
         style={{
           // IMPORTANT : on ne met jamais "public" dans le chemin
           backgroundImage:
-            "url('images/theme1_adaopte_images/images/background.jpg')",
+            "url('/images/theme1_adaopte_images/images/background.jpg')",
         }}
       >
         {/*
