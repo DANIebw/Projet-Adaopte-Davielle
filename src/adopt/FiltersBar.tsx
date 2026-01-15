@@ -1,42 +1,76 @@
 // bar de recherche
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function FiltersBar() {
+  const navigate = useNavigate();
+
+  // state pour le type d'animal (select)
+  const [type, setType] = useState("");
+
+  // state pour la localisation (input)
+  const [loc, setLoc] = useState("");
+
+  const handleSearch = () => {
+    // on construit l'URL avec seulement les paramètres remplis
+    const params = new URLSearchParams();
+
+    if (type.trim()) params.set("type", type.trim());
+    if (loc.trim()) params.set("loc", loc.trim());
+
+    const queryString = params.toString();
+    navigate(queryString ? `/animals?${queryString}` : "/animals");
+  };
+
   return (
-    <div>
-      {" "}
-      <div className="mb-3 md:w-96 mx-auto border-2 ">
+    <div className="mx-auto w-full max-w-5xl bg-white rounded-2xl shadow-lg p-6">
+      {/* 3 colonnes : Type / Localisation / Bouton */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-end">
+        {/* Colonne 1 : Type */}
         <div>
-          <strong>type d'animal</strong>
+          <label className="block text-sm font-medium text-neutral-700 mb-2">
+            <strong>Type d’animal</strong>
+          </label>
+
+          <select className="w-full rounded-lg border border-neutral-200 px-4 py-3 text-neutral-700 outline-none focus:border-neutral-400">
+            <option value="">Tous</option>
+            <option value="chien">Chien</option>
+            <option value="chat">Chat</option>
+            <option value="lapin">Lapin</option>
+            <option value="rongeur">Rongeur</option>
+          </select>
         </div>
-      </div>
-      <div className="relative mb-4 flex w-full flex-wrap items-stretch">
-        <input
-          type="search"
-          className="relative m-0 -mr-0.5 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="button-addon3"
-        />
 
-        {/* <!--Search button--> */}
+        {/* Colonne 2 : Localisation */}
+        <div>
+          <label className="block text-sm font-medium text-neutral-700 mb-2">
+            <strong>Localisation</strong>
+          </label>
 
-        <button
-          className="
-    px-9 py-5
-    rounded-full
-    bg-[#1F2937]
-    text-white font-bold
-    cursor-pointer
-    flex items-center gap-1
-    text-[18px]
-    border-none
-  "
-          type="button"
-          id="button-addon3"
-        >
-          rechercher 🔎
-        </button>
+          <input
+            type="text"
+            placeholder="Votre ville"
+            className="w-full rounded-lg border border-neutral-200 px-4 py-3 text-neutral-700 outline-none focus:border-neutral-400"
+          />
+        </div>
+
+        {/* Colonne 3 : Bouton */}
+        <div className="md:flex md:justify-end">
+          <button
+            type="button"
+            onClick={handleSearch}
+            className="
+            w-full md:w-auto
+            rounded-full
+            bg-black
+            px-10 py-3
+            text-white font-bold
+            flex items-center justify-center gap-2
+          "
+          >
+            Rechercher
+          </button>
+        </div>
       </div>
     </div>
   );
