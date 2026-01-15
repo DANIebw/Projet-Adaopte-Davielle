@@ -71,6 +71,8 @@ export default function HomePage() {
               aimante.Trouvez votre compagnon idéal parmi nos animaux disponible
               à l'adoption.
             </p>
+            {/* BARRE DE RECHERCHE */}
+            <FiltersBar />
           </div>
         </div>
       </section>
