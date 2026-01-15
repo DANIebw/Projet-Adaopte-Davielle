@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function FiltersBar() {
   const navigate = useNavigate();
 
-  // state pour le type d'animal (select)
+  // state pour le type d'animal (stocker les valeurs)
   const [type, setType] = useState("");
 
   // state pour la localisation (input)
