@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Pagination() {
   return (
-    <nav aria-label="Page navigation example">
+    <nav aria-label="Page navigation">
       <ul className="list-style-none flex">
         <li>
           <a className="pointer-events-none relative block rounded bg-transparent px-3 py-1.5 text-sm text-neutral-500 transition-all duration-300 dark:text-neutral-400">

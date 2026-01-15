@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
 import { HomeCards } from "../Components/Layout/HomeCards";
 import FiltersBar from "../adopt/FiltersBar";
+import Pagination from "../adopt/Pagination";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -72,7 +73,9 @@ export default function HomePage() {
               à l'adoption.
             </p>
             {/* BARRE DE RECHERCHE */}
-            <FiltersBar />
+            <div className="relative z-10 flex h-full items-center justify-center px-4">
+              <FiltersBar />
+            </div>
           </div>
         </div>
       </section>
@@ -233,6 +236,7 @@ export default function HomePage() {
           >
             Devenir bénévole
           </button>
+          <Pagination />
         </div>
       </div>
     </main>
