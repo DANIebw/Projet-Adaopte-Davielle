@@ -3,7 +3,7 @@ import type { Animal } from "../../../types/Animal";
 
 export default function AnimalCard({ animal }: { animal: Animal }) {
   return (
-    <div className="bg-white shadow rounded overflow-hidden">
+    <div className="bg-white shadow rounded overflow-hidden flex flex-col h-full transition hover:shadow-lg hover:-translate-y-1">
       {/*
         CONTENEUR PRINCIPAL DE LA CARTE
         - bg-white : fond blanc (effet carte)
@@ -61,7 +61,12 @@ export default function AnimalCard({ animal }: { animal: Animal }) {
           - text-sm : texte plus petit
           - donne un aperçu de l’animal
         */}
-        <p className="mt-2 text-sm">{animal.description}</p>
+        <p className="mt-2 text-sm text-gray-600 flex-grow">
+          {animal.description}
+        </p>
+        <button className="mt-4 w-fit rounded-full bg-black px-4 py-2 text-sm font-semibold text-white">
+          Rencontrer
+        </button>
       </div>
     </div>
   );

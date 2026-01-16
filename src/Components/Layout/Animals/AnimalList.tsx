@@ -14,7 +14,8 @@ const animals: Animal[] = [
     zipcode: "59000",
     description:
       "Charlie est un petit chien calme et affectueux qui adore les balades tranquilles et les caresses sur le canapé.",
-    imageUrl: "/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg",
   },
   {
     id: 2,
@@ -26,7 +27,8 @@ const animals: Animal[] = [
     zipcode: "67000",
     description:
       "Mia est une boule de tendresse curieuse et joueuse, toujours prête à ronronner près de vous.",
-    imageUrl: "/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg",
   },
   {
     id: 3,
@@ -38,7 +40,8 @@ const animals: Animal[] = [
     zipcode: "74000",
     description:
       "Coco est un petit lapin plein d’énergie, très doux et parfait pour un foyer aimant et paisible.",
-    imageUrl: "/images/chan-swan-NKyl19P5IHg-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg",
   },
   {
     id: 4,
@@ -50,7 +53,8 @@ const animals: Animal[] = [
     zipcode: "38000",
     description:
       "Rex est un chien loyal et majestueux, idéal pour une personne douce et patiente qui aime les câlins silencieux.",
-    imageUrl: "/images/alan-king-KZv7w34tluA-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg",
   },
   {
     id: 5,
@@ -62,7 +66,8 @@ const animals: Animal[] = [
     zipcode: "33000",
     description:
       "Luna adore les coins ensoleillés et les siestes à vos côtés. Elle vous offrira tout l’amour d’un regard félin.",
-    imageUrl: "/images/jae-park-7GX5aICb5i4-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg",
   },
   {
     id: 6,
@@ -74,7 +79,8 @@ const animals: Animal[] = [
     zipcode: "37000",
     description:
       "Biscuit est tout petit mais plein de vie ! Il aime les légumes croquants et les instants de douceur en famille.",
-    imageUrl: "/images/yosei-g-OVgE3m4MHKM-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg",
   },
   {
     id: 7,
@@ -86,7 +92,8 @@ const animals: Animal[] = [
     zipcode: "86000",
     description:
       "Rio est discret, mignon comme tout, et adore explorer les petits coins de la maison avec délicatesse.",
-    imageUrl: "/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg",
   },
   {
     id: 8,
@@ -98,7 +105,8 @@ const animals: Animal[] = [
     zipcode: "74400",
     description:
       "Ruby est une boule de neige pleine d’amour ! Elle adore les promenades et les câlins par temps frais.",
-    imageUrl: "/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg",
+    imageUrl:
+      "public/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg",
   },
 ];
 

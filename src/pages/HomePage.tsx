@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
 import { HomeCards } from "../Components/Layout/HomeCards";
 import FiltersBar from "../adopt/FiltersBar";
-import Pagination from "../adopt/Pagination";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -236,7 +235,6 @@ export default function HomePage() {
           >
             Devenir bénévole
           </button>
-          <Pagination />
         </div>
       </div>
     </main>
