@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
+import { Link } from "react-router-dom";
+
 import { HomeCards } from "../Components/Layout/HomeCards";
 import FiltersBar from "../adopt/FiltersBar";
 import Pagination from "../adopt/Pagination";
@@ -158,18 +160,17 @@ export default function HomePage() {
             </div>
           </div>
           <div className="text-center">
-            <button
-              onClick={() => navigate("/animals")}
-              type="button"
-              className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer"
+            <Link
+              to="/animals"
+              className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
             >
               Voir tous les animaux
-            </button>
+            </Link>
           </div>
         </div>
       </div>
 
-      <div className="text-center max-w-2xl mx-auto mb-14">
+      <div className="text-center max-w-2xl mx-auto mb-14 mt-16">
         <h2 className="text-3xl font-semibold mb-4">Comment ça marche</h2>
         <p className="text-sm text-neutral-500">
           Adopter un animal est un engagement sérieux et à long terme. Voici
@@ -213,29 +214,26 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-          <button
-            onClick={() => navigate("/animals")}
-            type="button"
-            className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer"
+          <Link
+            to="/animals"
+            className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Adopter un animal
-          </button>
+          </Link>
 
-          <button
-            onClick={() => navigate("/animals")}
-            type="button"
-            className="bg-[#f15b4a] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer"
+          <Link
+            to="/donation"
+            className="bg-[#f15b4a] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Faire un don🫶
-          </button>
+          </Link>
 
-          <button
-            onClick={() => navigate("/animals")}
-            type="button"
-            className="bg-[#00a652] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer"
+          <Link
+            to="/volunteer"
+            className="bg-[#00a652] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Devenir bénévole
-          </button>
+          </Link>
           <Pagination />
         </div>
       </div>
