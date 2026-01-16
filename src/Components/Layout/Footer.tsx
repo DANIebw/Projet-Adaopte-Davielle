@@ -51,32 +51,32 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="sm:text-center">
+        <div>
           <h3 className="text-[#ff6d38] text-lg mb-4">INFORMATIONS UTILES</h3>
           <ul className="space-y-2 text-sm sm:text-base">
-            <li className="flex justify-start sm:justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <NavLink to="#" className="text-gray-400">
                 FAQs
               </NavLink>
             </li>
-            <li className="flex justify-start sm:justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <NavLink to="#" className="text-gray-400">
                 Conseils d'adoption
               </NavLink>
             </li>
-            <li className="flex justify-start sm:justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <NavLink to="#" className="text-gray-400">
                 Nous contacter
               </NavLink>
             </li>
-            <li className="flex justify-start sm:justify-center items-center gap-2">
+            <li className="flex justify-start items-center gap-2">
               <NavLink to="#" className="text-gray-400">
                 Mentions légales
               </NavLink>
             </li>
           </ul>
         </div>
-        <div className="lg:text-right">
+        <div>
           <h3 className="text-[#ff6d38] text-lg mb-4">CONTACT</h3>
           <address className="text-white space-y-2 text-sm">
             <p>116 Rue du Faubourg Saint-Martin</p>
