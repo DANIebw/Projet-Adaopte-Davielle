@@ -4,7 +4,7 @@ import Footer from "./Components/Layout/Footer.tsx";
 import HomePage from "./pages/HomePage";
 import Animals from "./pages/Animals";
 import FiltersBar from "./adopt/FiltersBar.tsx";
-import Pagination from "./adopt/Pagination.tsx";
+
 // import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 export default function App() {

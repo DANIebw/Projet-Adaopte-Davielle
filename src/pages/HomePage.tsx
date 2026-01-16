@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import { HomeCards } from "../Components/Layout/HomeCards";
 import FiltersBar from "../adopt/FiltersBar";
-import Pagination from "../adopt/Pagination";
 
 export default function HomePage() {
   const navigate = useNavigate();
