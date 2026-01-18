@@ -233,7 +233,7 @@ export default function HomePage() {
           >
             Devenir bénévole
           </Link>
-          <Pagination />
+          {/* <Pagination /> */}
         </div>
       </div>
     </main>
