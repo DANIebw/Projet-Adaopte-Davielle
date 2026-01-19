@@ -1,121 +1,63 @@
-// Tableau contenant tous les animaux à afficher.
+// Logique
+import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import AnimalCard from "./AnimalCard";
 import type { Animal } from "../../../types/Animal";
-
-const animals: Animal[] = [
-  {
-    id: 1,
-    name: "Charlie",
-    age: "5 ans",
-    breed: "Pug",
-    type: "Chien",
-    city: "Lille",
-    zipcode: "59000",
-    description:
-      "Charlie est un petit chien calme et affectueux qui adore les balades tranquilles et les caresses sur le canapé.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg",
-  },
-  {
-    id: 2,
-    name: "Mia",
-    age: "2 ans",
-    breed: "Chat noir et blanc",
-    type: "Chat",
-    city: "Strasbourg",
-    zipcode: "67000",
-    description:
-      "Mia est une boule de tendresse curieuse et joueuse, toujours prête à ronronner près de vous.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg",
-  },
-  {
-    id: 3,
-    name: "Coco",
-    age: "1 an",
-    breed: "Lapin",
-    type: "Lapin",
-    city: "Annecy",
-    zipcode: "74000",
-    description:
-      "Coco est un petit lapin plein d’énergie, très doux et parfait pour un foyer aimant et paisible.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg",
-  },
-  {
-    id: 4,
-    name: "Rex",
-    age: "4 ans",
-    breed: "Chow-chow",
-    type: "Chien",
-    city: "Grenoble",
-    zipcode: "38000",
-    description:
-      "Rex est un chien loyal et majestueux, idéal pour une personne douce et patiente qui aime les câlins silencieux.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg",
-  },
-  {
-    id: 5,
-    name: "Luna",
-    age: "3 ans",
-    breed: "Chat Roux",
-    type: "Chat",
-    city: "Bordeaux",
-    zipcode: "33000",
-    description:
-      "Luna adore les coins ensoleillés et les siestes à vos côtés. Elle vous offrira tout l’amour d’un regard félin.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg",
-  },
-  {
-    id: 6,
-    name: "Biscuit",
-    age: "3 mois",
-    breed: "Cochon d'Inde",
-    type: "Rongeur",
-    city: "Tours",
-    zipcode: "37000",
-    description:
-      "Biscuit est tout petit mais plein de vie ! Il aime les légumes croquants et les instants de douceur en famille.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg",
-  },
-  {
-    id: 7,
-    name: "Rio",
-    age: "5 mois",
-    breed: "Lapin nain brun",
-    type: "Lapin",
-    city: "Poitiers",
-    zipcode: "86000",
-    description:
-      "Rio est discret, mignon comme tout, et adore explorer les petits coins de la maison avec délicatesse.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg",
-  },
-  {
-    id: 8,
-    name: "Ruby",
-    age: "2 ans",
-    breed: "Chien Samoyed",
-    type: "Chien",
-    city: "Chamonix",
-    zipcode: "74400",
-    description:
-      "Ruby est une boule de neige pleine d’amour ! Elle adore les promenades et les câlins par temps frais.",
-    imageUrl:
-      "/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg",
-  },
-];
+import animalsData from "../../../data/animals.json";
 
 export default function AnimalList() {
+  // 🔹 On lit directement les paramètres de l’URL
+  const [searchParams] = useSearchParams();
+
+  // 🔹 Données brutes
+  const animals = animalsData as Animal[];
+
+  // 🔹 State des animaux filtrés
+  const [filteredAnimals, setFilteredAnimals] = useState<Animal[]>(animals);
+
+  useEffect(() => {
+    // 🔹 Récupération des paramètres
+    const type = searchParams.get("type");
+    const loc = searchParams.get("loc");
+
+    // 🔹 Normalisation (sécurité + comparaison fiable)
+    const normalizedType = (type ?? "").trim().toLowerCase();
+    const normalizedLoc = (loc ?? "").trim().toLowerCase();
+
+    // 🔍 DEBUG (optionnel)
+    console.log("Filtres URL :", { normalizedType, normalizedLoc });
+
+    // 🔹 Filtrage
+    const result = animals.filter((animal) => {
+      const aType = animal.type.toLowerCase();
+      const aCity = animal.city.toLowerCase();
+      const aZip = animal.zipcode.toLowerCase();
+
+      const matchType = !normalizedType || aType === normalizedType;
+      const matchLoc =
+        !normalizedLoc ||
+        aCity.includes(normalizedLoc) ||
+        aZip.includes(normalizedLoc);
+
+      return matchType && matchLoc;
+    });
+
+    setFilteredAnimals(result);
+  }, [searchParams, animals]);
+
+  // 🔹 Affichage
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      {animals.map((animal) => (
-        <AnimalCard key={animal.id} animal={animal} />
-      ))}
+      {filteredAnimals.length === 0 ? (
+        <p className="col-span-full text-center text-gray-500">
+          Aucun animal ne correspond à votre recherche 🐾
+        </p>
+      ) : (
+        filteredAnimals.map((animal) => (
+          <AnimalCard key={animal.id} animal={animal} />
+        ))
+      )}
     </div>
   );
 }
