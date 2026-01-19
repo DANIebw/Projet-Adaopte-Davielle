@@ -4,13 +4,14 @@ import AnimalList from "../Components/Layout/Animals/AnimalList";
 
 export default function AdaoptPage() {
   return (
-    <main style={{ padding: 16 }}>
+    <main className="px-4 py-8">
       <FiltersBar />
-      <div className=" h-[70vh]" style={{ padding: 45 }}>
+      <div className="mt-8">
         <AnimalList />
       </div>
-
-      <Pagination />
+      <div className="mt-8">
+        <Pagination />
+      </div>
     </main>
   );
 }

@@ -65,7 +65,7 @@ export default function FiltersBar() {
             bg-black
             px-10 py-3
             text-white font-bold
-            flex items-center justify-center gap-2
+            flex items-center justify-center gap-2 cursor-pointer
           "
           >
             Rechercher

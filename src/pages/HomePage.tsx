@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 // changer de page sans recharger
 import { Link } from "react-router-dom";
-
 import { HomeCards } from "../Components/Layout/HomeCards";
 import FiltersBar from "../adopt/FiltersBar";
 
@@ -213,26 +212,26 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
-          <Link
-            to="/animals"
+          <button
+            onClick={() => navigate("/animals")}
             className="bg-[#333] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Adopter un animal
-          </Link>
+          </button>
 
-          <Link
-            to="/donation"
+          <button
+            onClick={() => navigate("/donation")}
             className="bg-[#f15b4a] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Faire un don🫶
-          </Link>
+          </button>
 
-          <Link
-            to="/volunteer"
+          <button
+            onClick={() => navigate("/volunteer")}
             className="bg-[#00a652] text-white px-8 py-3 rounded-full font-medium hover:bg-[#444] transition-colors text-sm uppercase tracking-wide cursor-pointer inline-block text-center"
           >
             Devenir bénévole
-          </Link>
+          </button>
           {/* <Pagination /> */}
         </div>
       </div>

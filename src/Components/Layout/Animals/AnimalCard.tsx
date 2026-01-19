@@ -3,7 +3,7 @@ import type { Animal } from "../../../types/Animal";
 
 export default function AnimalCard({ animal }: { animal: Animal }) {
   return (
-    <div className="bg-white shadow rounded overflow-hidden flex flex-col h-full transition hover:shadow-lg hover:-translate-y-1">
+    <div className="bg-[#f9f9f9] shadow rounded overflow-hidden flex flex-col h-full transition hover:shadow-lg hover:-translate-y-1">
       {/*
         CONTENEUR PRINCIPAL DE LA CARTE
         - bg-white : fond blanc (effet carte)
