@@ -1,4 +1,5 @@
-// carte visuelle
+// carte visuelle // affichage
+
 import type { Animal } from "../../../types/Animal";
 
 export default function AnimalCard({ animal }: { animal: Animal }) {
@@ -64,7 +65,10 @@ export default function AnimalCard({ animal }: { animal: Animal }) {
         <p className="mt-2 text-sm text-gray-600 flex-grow">
           {animal.description}
         </p>
-        <button className="mt-4 w-fit rounded-full bg-black px-4 py-2 text-sm font-semibold text-white">
+        <button
+          onClick={() => (animal.name, animal.type)}
+          className="mt-4 w-fit rounded-full bg-black px-4 py-2 text-sm font-semibold text-white"
+        >
           Rencontrer
         </button>
       </div>

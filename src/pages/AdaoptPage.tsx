@@ -9,7 +9,6 @@ export default function AdaoptPage() {
       <div className=" h-[70vh]" style={{ padding: 45 }}>
         <AnimalList />
       </div>
-
       <Pagination />
     </main>
   );

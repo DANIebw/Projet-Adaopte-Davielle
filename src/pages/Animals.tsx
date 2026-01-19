@@ -1,3 +1,5 @@
+// page
+
 import { useSearchParams } from "react-router-dom";
 import AnimalList from "../Components/Layout/Animals/AnimalList";
 
@@ -14,6 +16,8 @@ export default function Animals() {
   // On récupère la valeur du paramètre "loc"
   // → si l’URL contient ?loc=Nantes → loc = "Nantes"
   const loc = params.get("loc");
+
+  console.log("animals.tsx", type, loc);
 
   return (
     // Conteneur principal de la page
@@ -37,7 +41,7 @@ export default function Animals() {
         </strong>
       </p>
 
-      {/* 
+      {/*       
         Affichage de la liste des animaux
         → AnimalList s’occupe d’afficher toutes les cartes
       */}
