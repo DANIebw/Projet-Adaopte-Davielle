@@ -12,6 +12,7 @@ export default function AdaoptPage() {
       <div className="mt-8">
         <Pagination />
       </div>
+      <Pagination />
     </main>
   );
 }
