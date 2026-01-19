@@ -20,7 +20,7 @@ export default function Animals() {
     // - max-w-7xl : largeur max (évite que tout s’étale sur écran large)
     // - mx-auto : centre horizontalement
     // - p-6 : padding intérieur
-    <main className="max-w-7xl mx-auto p-6">
+    <main className="max-w-7xl mx-auto p-6 mb-20">
       {/* Titre de la page */}
       <h1 className="text-2xl font-bold mb-2">Voir les animaux</h1>
 

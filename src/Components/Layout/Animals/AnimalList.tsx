@@ -15,7 +15,7 @@ const animals: Animal[] = [
     description:
       "Charlie est un petit chien calme et affectueux qui adore les balades tranquilles et les caresses sur le canapé.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const animals: Animal[] = [
     description:
       "Mia est une boule de tendresse curieuse et joueuse, toujours prête à ronronner près de vous.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const animals: Animal[] = [
     description:
       "Coco est un petit lapin plein d’énergie, très doux et parfait pour un foyer aimant et paisible.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg",
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const animals: Animal[] = [
     description:
       "Rex est un chien loyal et majestueux, idéal pour une personne douce et patiente qui aime les câlins silencieux.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg",
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const animals: Animal[] = [
     description:
       "Luna adore les coins ensoleillés et les siestes à vos côtés. Elle vous offrira tout l’amour d’un regard félin.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const animals: Animal[] = [
     description:
       "Biscuit est tout petit mais plein de vie ! Il aime les légumes croquants et les instants de douceur en famille.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg",
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ const animals: Animal[] = [
     description:
       "Rio est discret, mignon comme tout, et adore explorer les petits coins de la maison avec délicatesse.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg",
   },
   {
     id: 8,
@@ -106,7 +106,7 @@ const animals: Animal[] = [
     description:
       "Ruby est une boule de neige pleine d’amour ! Elle adore les promenades et les câlins par temps frais.",
     imageUrl:
-      "public/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg",
+      "/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg",
   },
 ];
 
