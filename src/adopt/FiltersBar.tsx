@@ -67,7 +67,7 @@ export default function FiltersBar() {
             flex items-center justify-center gap-2
           "
           >
-            Rechercher
+            Rechercher 🔎
           </button>
         </div>
       </div>
