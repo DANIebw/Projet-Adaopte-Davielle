@@ -9,70 +9,26 @@ export default function HomePage() {
 
   return (
     <main>
-      {/* 
-   Header
-        - relative : sert de référence pour les éléments en position absolute
-        - h-[70vh] : la section prend 70 % de la hauteur de l’écran
-        - bg-cover : l’image couvre toute la section
-        - bg-center : l’image est centrée automatiquement
-      */}
       <section
         className="relative h-[70vh] bg-cover bg-center "
         style={{
-          // IMPORTANT : on ne met jamais "public" dans le chemin
-          backgroundImage:
-            "url('/images/theme1_adaopte_images/images/background.jpg')",
+          backgroundImage: "url('/animals/background.jpg')",
         }}
       >
-        {/*
-        OVERLAY SOMBRE
-        - absolute : se place par-dessus l’image
-        - inset-0 : top / right / bottom / left = 0 (prend toute la section)
-        - bg-black/40 : noir à 40 % d’opacité pour améliorer la lisibilité du texte
-      */}
         <div className="absolute inset-0 bg-black/40"></div>
 
-        {/*
-        CONTENEUR DU CONTENU
-        - relative : nécessaire pour fonctionner avec z-index
-        - z-10 : place le contenu AU-DESSUS de l’overlay
-        - flex + items-center + justify-center : centrage vertical et horizontal
-        - h-full : prend toute la hauteur de la section
-        - px-4 : padding horizontal pour mobile
-      */}
         <div className="relative z-10 flex h-full items-center justify-center px-4">
-          {/*
-          TYLE DU TEXTE
-          - text-center : texte centré
-          - text-white : texte blanc
-          - max-w-3xl : limite la largeur pour une meilleure lisibilité
-        */}
           <div className="max-w-3xl text-center text-white">
-            {/*
-            TITRE PRINCIPAL
-            - text-3xl → taille mobile
-            - md:text-5xl → taille desktop
-            - font-bold : texte épais
-            - uppercase : lettres capitales
-            - tracking-wide : espacement entre les lettres
-            - mb-4 : marge en bas
-          */}
             <h1 className="mb-4 text-3xl font-bold uppercase tracking-wide md:text-5xl ">
               DONNONS-LEUR AUTANT QU’ILS NOUS APPORTENT
             </h1>
-            {/*
-            TEXTE DESCRIPTIF
-            - text-sm → mobile
-            - md:text-lg → desktop
-            - text-white/90 : blanc légèrement atténué
-          */}
 
             <p className="text-sm text-white/90 md:text-lg">
               Chaque jour, des milliers d’animaux attendent une famille
               aimante.Trouvez votre compagnon idéal parmi nos animaux disponible
               à l'adoption.
             </p>
-            {/* BARRE DE RECHERCHE */}
+
             <div className="relative z-10 flex h-full items-center justify-center px-4">
               <FiltersBar />
             </div>
@@ -95,14 +51,14 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
+                  src="/animals/charlesdeluvio-K4mSJ7kc0As-unsplash.jpg"
                   alt="CharlesDeluvio"
                   className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
+                  src="/animals/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
                   alt="Manja Vitolic"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -111,14 +67,14 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/chan-swan-NKyl19P5IHg-unsplash.jpg"
+                  src="/animals/chan-swan-NKyl19P5IHg-unsplash.jpg"
                   alt="Chan Swan"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/alan-king-KZv7w34tluA-unsplash.jpg"
+                  src="/animals/alan-king-KZv7w34tluA-unsplash.jpg"
                   alt="Alan King"
                   className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -127,14 +83,14 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/jae-park-7GX5aICb5i4-unsplash.jpg"
+                  src="/animals/jae-park-7GX5aICb5i4-unsplash.jpg"
                   alt="Jae Park"
                   className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/yosei-g-OVgE3m4MHKM-unsplash.jpg"
+                  src="/animals/yosei-g-OVgE3m4MHKM-unsplash.jpg"
                   alt="Yosei G"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -143,14 +99,14 @@ export default function HomePage() {
             <div className="space-y-4">
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
+                  src="/animals/melanie-kreutz-IFnknR2Mv5o-unsplash.jpg"
                   alt="Melanie Kreutz"
                   className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                 <img
-                  src="/images/theme1_adaopte_images/images/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
+                  src="/animals/peri-stojnic-5Vr_RVPfbMI-unsplash.jpg"
                   alt="Peri Stojnic"
                   className="w-full h-140 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -232,7 +188,6 @@ export default function HomePage() {
           >
             Devenir bénévole
           </button>
-          {/* <Pagination /> */}
         </div>
       </div>
     </main>

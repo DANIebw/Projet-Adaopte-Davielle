@@ -1,6 +1,6 @@
 import FiltersBar from "../adopt/FiltersBar";
 import Pagination from "../adopt/Pagination";
-import AnimalList from "../Components/Layout/Animals/AnimalList";
+import AnimalList from "../Components/AnimalList";
 
 export default function AdaoptPage() {
   return (

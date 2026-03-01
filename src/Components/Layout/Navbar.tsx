@@ -1,6 +1,5 @@
 // import React from "react";
 import { NavLink } from "react-router-dom";
-// NavLink sert à naviguer entre les pages sans recharger le site. C’est l’équivalent React de <a href="">, mais en mieux.
 import { FiHome } from "react-icons/fi";
 import { FaBone } from "react-icons/fa";
 import { LuRabbit, LuFish } from "react-icons/lu";

@@ -3,29 +3,24 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import AnimalCard from "./AnimalCard";
-import type { Animal } from "../../../types/Animal";
-import animalsData from "../../../data/animals.json";
+import type { Animal } from "../types/Animal";
+import animalsData from "../data/animals.json";
 
 export default function AnimalList() {
-  // 🔹 On lit directement les paramètres de l’URL
   const [searchParams] = useSearchParams();
 
-  // 🔹 Données brutes
   const animals = animalsData as Animal[];
 
-  // 🔹 State des animaux filtrés
   const [filteredAnimals, setFilteredAnimals] = useState<Animal[]>(animals);
 
   useEffect(() => {
-    // 🔹 Récupération des paramètres
     const type = searchParams.get("type");
     const loc = searchParams.get("loc");
 
-    // 🔹 Normalisation (sécurité + comparaison fiable)
     const normalizedType = (type ?? "").trim().toLowerCase();
     const normalizedLoc = (loc ?? "").trim().toLowerCase();
 
-    // 🔍 DEBUG (optionnel)
+    // DEBUG
     console.log("Filtres URL :", { normalizedType, normalizedLoc });
 
     // 🔹 Filtrage
@@ -46,7 +41,6 @@ export default function AnimalList() {
     setFilteredAnimals(result);
   }, [searchParams, animals]);
 
-  // 🔹 Affichage
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {filteredAnimals.length === 0 ? (
